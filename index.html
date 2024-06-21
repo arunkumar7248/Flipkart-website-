@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+       <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+</head>
+<body>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(29, 28, 28);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.container{
+    width: 100vw;
+    height:100vh;
+    background-color: rgb(202, 214, 214);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+nav{
+    width: 100vw;
+    height: 70px;
+    background:rgb(3, 250, 147) ;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    position: fixed;
+    z-index: 2;
+     }
+.searchbox{
+    width: 400px;
+    height: 50px;
+        align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 30px;
+}
+#srch{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    text-align:center;
+    background: rgb(252, 249, 249);
+    border-radius: 30px;
+    font-size: 18px;
+}
+.icon{
+    width: 200px;
+    height: 50px;
+    background: black;
+    color:white;
+    border: none;
+    border-radius: 30px;
+    font-size:20px;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    display: flex;
+}
+.icn{
+    width: 150px;
+    height: 50px;
+    border: none;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+font-size:20px;
+background: none;
+
+}
+.icns{
+    width: 200px;
+    height: 50px;
+    border: none;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+font-size:20px;
+background: none;
+}
+.fa-cart-shopping,.fa-circle-dollar-to-slot{
+        font-size: 40px;
+}
+.logo{
+    width:250px;
+    height:100%;
+    background:linear-gradient(to left,orange,yellow,transparent);
+      color:black;
+    align-items: center;
+    justify-content:left;
+    text-align:center;
+    display: flex;
+    font-size: 35px;
+    border: none;
+    border-top-right-radius:30px;
+    border-bottom-right-radius:30px;
+}
+#bar{
+    font-size: 35px;
+   }
+.logo,.searchbox,.icon,.icn,.icns,#bar{
+    cursor: pointer;
+    margin: 0px 20px;
+}
+.servicesbox{
+    width:100vw;
+    height:125px;
+    background: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    margin-top: 50px;
+
+}
+.box1{
+width: 70px;
+height:70px;
+background-image: url("https://5.imimg.com/data5/MG/FQ/SA/SELLER-283756/all-fmcg-grocery-products.jpg");
+}
+h1{
+    font-size:17px;
+    margin-top: 70px;
+}
+.box1,.box2,.box3,.box4,.box5,.box6,.box7,.box8,.box9,.box10{
+width: 80px;
+height:70px; 
+margin: 20px 40px; 
+background-size: 100%;
+cursor: pointer;
+}
+.box2{
+    background-image: url("https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1680030998.0464825!500x500.jpg");
+}
+.box3{
+    background-image: url("https://i.pinimg.com/564x/85/22/34/8522346c05525356198706df30c7ebe0.jpg");
+}
+.box4{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkW1aynr1V5Eath8qs0u5goH_7mVIg-3mEtDDjlS1zRzwHPEHPeKh-bJTVD3sdgYB8I3Q&usqp=CAU");
+}
+.box5{
+    background-image: url("https://m.media-amazon.com/images/I/51Umj0RrKVL._AC_UF894,1000_QL80_.jpg");
+}
+.box6{
+    background-image: url("https://d13bbii8ozdt01.cloudfront.net/uploads/2022/11/Crompton-OTG-Amazon-A-Imgs-Bakers-Delight-970x600px-J5518-A4335.webp");
+}
+.box7{
+    background-image: url("https://pngimg.com/d/plane_PNG101223.png");
+}
+.box8{
+    background-image: url("https://img.cdnx.in/117561/cat/1639401082834_120850_cat.png?width=320&height=320");
+}
+.box9{
+    background-image: url("https://www.honda2wheelersindia.com/assets/images/products/Motorcycle/SP160_product_img.jpg");
+}
+.box10{
+    background-image: url("https://vectorain.com/wp-content/uploads/2017/02/Pr%20105%20-%20TRI%20-%2027_12_10%20-%20019.jpg");
+}
+.box1:hover,.box2:hover,.box3:hover,.box4:hover,.box5:hover,.box6:hover,.box7:hover,.box8:hover,.box9:hover,.box10:hover{
+
+    color: blue;
+    text-decoration: underline;
+    border: 2px solid blue;
+   
+}
+     .mores{
+        position:fixed;
+        width:300px;
+        height:0px;
+        background-color: #0cd8f3f3;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        margin-top:70px;
+        margin-left: 1280px;
+        z-index:2;
+        text-align: center;
+    align-items: center;
+    justify-content:center;
+    display:flex;
+    color: white;
+    flex-direction: column;
+    overflow: hidden;
+    transition: 0.5s;
+   
+     }
+     .btmore{
+        justify-content:center;
+        width: 250px;
+        height:45px;
+        border: none;
+        background-color:white;
+        border-radius: 20px;
+        margin: 8px 10px;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        font-size:18px;
+        word-spacing: 2px;
+        transition: 0.5s;
+        gap:10px;
+
+    
+     }
+     .btmore:hover{
+        background:linear-gradient(to left, rgb(226, 4, 255), rgb(241, 115, 12));
+     color: white;
+     box-shadow: 3px 3px 3px 3px rgba(2, 178, 209, 0.89),5px 5px 5px #ccc;
+     font-size: 20px;
+     }
+     .icn:hover,.icns:hover,.icon:hover{
+        transition:0.5s;
+        background:blue;
+        color:white;
+        border-radius: 30px;
+        box-shadow: 3px 3px 3px 3px rgba(1, 116, 45, 0.9),5px 5px 10px greenyellow;
+
+     }
+     #bar:hover{
+        color: blue;
+        font-size:40px;
+     }
+    .userop{
+        width: 300px;
+        height:0px;
+        background:rgb(216, 84, 188);
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        position: absolute;
+        z-index: 2;
+        margin-left:710px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        display: block;
+        flex-direction: column;
+        margin-top:70px;
+        position: fixed;
+        overflow: hidden;
+        transition: 0.5s;
+
+        }
+.logop{
+    width: 100%;
+    height: 70px;
+    border: none;
+    border-radius: 10px;
+    align-items: center;
+    justify-content:space-around;
+    text-align: center;
+    display: flex;
+    background:linear-gradient(to left, red, orange);
+  }
+a{
+ color: white;
+ font-size: 20px;
+ text-decoration: none;
+}
+.usermenu{
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid rgb(182, 172, 172);
+    background-color:rgba(255, 255, 255, 0);
+    font-size: 20px;
+    align-items: center;
+    justify-content:center;
+    display: flex;
+    gap: 15px;
+    transition:0.5s;
+    cursor: pointer;
+}
+.usermenu:hover{
+    font-size: 25px;
+    color: white;
+         background:rgb(55, 55, 143);
+    
+}
+a:hover{
+    transition: 0.5s;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 25px;
+}
+.swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top:5px;
+        }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height:100%;
+      object-fit: cover;
+    }
+
+    .swiper-slide {
+      width:35%;
+      height:250px;
+    }
+    .sellbox{
+        width: 100%;
+        height: 450px;
+        background: rgb(167, 139, 189);
+        align-items: center;
+        justify-content: center;
+        place-items: center;
+        display:flex;
+        margin-top: 5px;
+        overflow-y: hidden;
+        overflow-x: hidden;
+       }
+          .owl-carousel{
+            position: absolute;
+        width:100%;
+        height:400px;
+       object-fit: cover;
+    
+       }
+       .owl-carousel img{
+        align-items: center;
+        justify-content: center;
+        place-items: center;
+        width: 100%;
+        height:400px;
+        border-radius: 20px;
+       }
+       .signupbox{
+        width:550px;
+        height:570px;
+        background:rgb(166, 3, 172);
+        border-radius: 10px;
+        position:fixed;
+        z-index: 2;
+        margin-left:500px;
+        margin-top: -50px;
+        overflow: hidden;
+        }
+       form{
+        width: 100%;
+        height: 100%;
+        background: none;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+       }
+       #ns,#fnm,#lnm,#mn,#em,#ad,#sgnp{
+width: 400px;
+height: 55px;
+background: white;
+border: none;
+border-radius: 10px;
+outline: none;
+text-align: center;
+margin: 5px 3px;
+font-size: 20px;
+       }
+       #sgnp{
+        background: black;
+        color: white;
+       }
+       #ns{
+        background-color:rgb(255, 94, 0);
+        color: white;
+       }
+                         
+    </style>
+    <div class="container">
+        <nav>
+            <div class="logo">Flipkart </div>
+            <div class="searchbox"><input type="text"placeholder="Search for  Products, Brands and more."id="srch"></div>
+<button id="loginusr"class="icon"><i class="fa-solid fa-circle-user"></i>Login<i class="fa-solid fa-angle-down"id="anglerght"></i></button>
+<button class="icn"><i class="fa-solid fa-cart-shopping"></i>Cart</button>
+<button  class="icns"><i class="fa-solid fa-circle-dollar-to-slot"></i>Became a seller</button>
+<i class="fa-solid fa-grip-vertical"id="bar"></i>
+        </nav>
+        <div class="mores">
+       <button class="btmore"><i class="fa-solid fa-bell"></i>notification</button>
+       <button class="btmore"><i class="fa-solid fa-circle-half-stroke"></i>Dark mode</button>
+       <button class="btmore"><i class="fa-solid fa-clock-rotate-left"></i></i>Order history</button>
+       <button class="btmore"><i class="fa-solid fa-phone"></i>24x7 customer care</button>
+        </div>
+        <div class="userop">
+            <button class="logop"><h2>New customer ?</h2><a href="">Signup</a></button>
+            <button class="usermenu"><i class="fa-solid fa-circle-user"></i>Profile</button>
+            <button class="usermenu"><i class="fa-solid fa-bag-shopping"></i>Orders</button>
+            <button class="usermenu"><i class="fa-solid fa-heart"></i>Wishlist</button>
+            <button class="usermenu"><i class="fa-solid fa-gift"></i>Rewards</button>
+            <button class="usermenu"><i class="fa-regular fa-credit-card"></i>Gift card</button>
+                 </div>
+        <div class="servicesbox">
+<div class="box1">
+<h1>Grocery</h1>
+</div>
+<div class="box2">
+    <h1>Mobiles</h1>
+    </div>
+    <div class="box3">
+        <h1>Fashion</h1>
+        
+        </div>
+        <div class="box4">
+            <h1>Electronics</h1>
+                </div>
+            <div class="box5">
+                <h1>Home&Furniture</h1>
+                </div>
+                <div class="box6">
+                    <h1>Appliances</h1>
+                    </div>
+                    <div class="box7">
+                        <h1>travel</h1>
+                        </div>
+                        <div class="box8">
+                            <h1>Beauty,Toys&More</h1>
+                            </div>
+                            <div class="box9">
+                                <h1>Two,Wheelers</h1>
+                                </div>
+                                <div class="box10">
+                                    <h1>Books,Pen</h1>
+                                    </div>
+                                    </div>
+                                    <div class="signupbox">
+                                        <form action=""id="snfrm">
+                                            <button id="ns">New Account signup</button><br><br>
+                                            <input type="text"placeholder="First name"id="fnm"><br><br>
+                                            <input type="text"placeholder="Last name"id="lnm"><br><br>
+                                            <input type="number"placeholder="Mobile number"id="mn"><br><br>
+                                            <input type="email"placeholder="Email adress.."id="em"><br><br>
+                                            <input type="password"placeholder="Set Password"id="ad"><br><br>
+                                            <input type="submit"value="SignUp"id="sgnp">
+
+                                        </form>
+                                                                        </div>  
+                                            <div class="swiper mySwiper">
+                                            <div class="swiper-wrapper">
+                                              <div class="swiper-slide"><img src="image1.jpg"></div>
+                                              <div class="swiper-slide"><img src="image2.jpg"></div>
+                                              <div class="swiper-slide"><img src="image3.jpg"></div>
+                                              <div class="swiper-slide"><img src="nature.jpg"></div>
+                                              <div class="swiper-slide"><img src="image3.jpg"></div>
+                                              <div class="swiper-slide"><img src="image2.jpg"></div>
+                                              <div class="swiper-slide"><img src="image1.jpg"></div>
+                                              <div class="swiper-slide"><img src="image3.jpg"></div>
+                                                                                        </div>
+                                            <div class="swiper-pagination"></div>
+                                          </div>
+                                          
+                                          <div class="sellbox">
+                                  
+                                            <div id="slider-1" class="owl-carousel">
+                                                <div><img src="https://rukminim2.flixcart.com/image/800/600/cms-rpd-img/83902f61afda4727badbe52ba1c632d1_18f2904440b_GlobalKV.png?q=90" alt=""></div>
+                                                <div><img src="https://www.oneindia.com/img/1200x60x675/2017/11/flipkart-28-1511865876.jpg" alt=""></div>
+                                                <div><img src="https://m.media-amazon.com/images/I/81oNEoL97ML._AC_UF350,350_QL80_.jpg" alt=""></div>
+                                                <div><img src="https://img.freepik.com/premium-vector/brand-new-sport-shoe-collection-instagram-banner-ad-concept-social-media-post-template_494286-122.jpg" alt=""></div>
+                                                <div><img src="https://img.freepik.com/premium-vector/brand-new-sport-shoe-collection-instagram-banner-ad-concept-social-media-post-template_494286-122.jpg" alt=""></div>
+                                                <div> <img src="https://www.herocycles.com/on/demandware.static/-/Sites-HeroCycles-Library/default/dwc1ec20f5/Homepage/Topbanner/1920x1047Colt.jpg" alt=""></div>
+                                                <div><img src="https://rukminim2.flixcart.com/fk-p-flap/500/550/image/66273d85cb37b84f.png?q=20" alt=""></div>
+                                              </div>               
+                                          </div>   
+                                                                    
+                                    
+
+        </div>
+     
+<script>
+    let moreop=document.querySelector(".fa-grip-vertical");
+    let anglert=document.querySelector(".fa-angle-down");
+    let angleup=document.querySelector(".fa-angle-up");
+    let morebox=document.querySelector(".mores");
+    let userboxop =document.querySelector(".userop");
+    let logbt=document.getElementById("loginusr");
+    let angle=document.getElementById("anglerght");
+    moreop.onclick = function(){
+        if(moreop.classList.contains("fa-grip-vertical")){
+        morebox.style.width="300px";
+        morebox.style.height="250px";
+        moreop.classList.replace("fa-grip-vertical","fa-circle-xmark");
+        }
+        else{
+            morebox.style.width="300px";
+        morebox.style.height="0px";
+        moreop.classList.replace("fa-circle-xmark","fa-grip-vertical");  
+        }
+    }
+        anglert.onclick = function(){
+        if(anglert.classList.contains("fa-angle-down")){
+               userboxop.style.height="320px";
+        anglert.classList.replace("fa-angle-down","fa-circle-xmark");
+        }
+        else{
+             userboxop.style.height="0px";
+        anglert.classList.replace("fa-circle-xmark","fa-angle-down");  
+        }
+    }
+
+   </script>
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+     <!-- Initialize Swiper -->
+     <script>
+       var swiper = new Swiper(".mySwiper", {
+         slidesPerView: "auto",
+         spaceBetween: 10,
+         autoplay:{
+        delay:2500,
+        disableOnInteraction:false,
+         },
+         pagination: {
+           el: ".swiper-pagination",
+           clickable: true,
+           draggable:true,
+         },
+       });
+   
+       </script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+       <script>
+        $(document).ready(function(){
+  $("#slider-1").owlCarousel({
+margin:10,
+loop:true,
+  });
+
+
+});
+       </script>
+ </body>
+
+</html>
